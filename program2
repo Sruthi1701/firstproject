@@ -1,0 +1,21 @@
+class Sample
+{
+    int i=10;
+    void show()
+    {
+        System.out.println(i);
+    }
+}
+class Sample1 extends Sample{
+    int i=20;
+    void show()
+    {   super.show();
+        System.out.print(i);
+    }
+}
+class Main
+{
+public static void main (String[] args) {
+    Sample1 obj = new Sample1();
+    obj.show();
+}}
